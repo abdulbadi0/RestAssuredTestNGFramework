@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Test Suite">
+	<test name="TestParamsFromXML Test">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="env" value="qa"></parameter>
+		<classes>
+
+			<class name="testDataParametrization.TestParamsFromXMLNG" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="TestParamsFromXML2 Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+
+			<class name="testDataParametrization.TestParamsFromXMLNG" />
+			<parameter name="env" value="uat"></parameter>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
